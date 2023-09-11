@@ -1,15 +1,15 @@
 import axios from "axios";
 import fs from "fs";
 
-const username = "rich";
-const password = "richpassword";
+const username = "";
+const password = "";
 
 function downloadConfig(id) {
   const credentials = btoa(`${username}:${password}`);
   const headers = {
     Authorization: `Basic ${credentials}`,
   };
-  const url = `https://richvpn.overdb.fun/api/servers/${id}`;
+  const url = ``;
   axios
     .get(url, { headers }) // <-- pass headers here
     .then((response) => {
